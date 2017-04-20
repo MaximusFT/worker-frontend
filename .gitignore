@@ -1,0 +1,10 @@
+assets/build/
+node-modules/
+.node-modules/
+~/.node-modules/
+.npm-debug.log
+README.md
+/node_modules/
+/_old/
+/bower_components/
+/_11/

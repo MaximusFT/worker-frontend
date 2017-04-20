@@ -1,0 +1,93 @@
+$ffIco: 'ico';
+$ffIcoPath: '../../ico/fonts/';
+
+.ico {
+    display: inline-block;
+    font: normal normal normal 14px/1 "ico";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: -10%;
+}
+.ico-inverse {
+    color: #ffffff;
+}
+.ico-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -20%;
+}
+.ico-2x {
+    font-size: 2.5em;
+}
+.ico-3x {
+    font-size: 3em;
+}
+.ico-4x {
+    font-size: 4em;
+}
+.ico-5x {
+    font-size: 5em;
+}
+
+
+.ico-play:before {
+	content: "\E001";
+}
+
+.ico-logo:before {
+	content: "\E002";
+}
+
+.ico-ic-invest:before {
+	content: "\E003";
+}
+
+.ico-ic-call:before {
+	content: "\E004";
+}
+
+.ico-ic-more:before {
+	content: "\E005";
+}
+
+.ico-ic_map:before {
+	content: "\E006";
+}
+
+.ico-ic-earth:before {
+	content: "\E007";
+}
+
+.ico-ic-people:before {
+	content: "\E008";
+}
+
+.ico-ic-stats:before {
+	content: "\E009";
+}
+
+.ico-ic-facebook:before {
+	content: "\E00A";
+}
+
+.ico-ic-twitter:before {
+	content: "\E00B";
+}
+
+.ico-ic-youtube:before {
+	content: "\E00C";
+}
+
+.ico-ic-linkedin:before {
+	content: "\E00D";
+}
+
+.ico-ic-instagram:before {
+	content: "\E00E";
+}
+
+.ico-ic-download:before {
+	content: "\E00F";
+}

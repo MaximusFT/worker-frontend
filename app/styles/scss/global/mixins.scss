@@ -1,0 +1,69 @@
+@mixin breakpoint($point) {
+    @if $point==extra-large {
+        @media (min-width: 1600px) {
+            @content;
+        }
+    }
+    @else if $point==large {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $point==medium {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $point==small {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @else if $point==extra-small {
+        @media (min-width: 500px) and (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $point==extra-xs-small {
+        @media (max-width: 499px) {
+            @content;
+        }
+    }
+    @else if $point==extra-xxs-small {
+        @media (max-width: 360px) {
+            @content;
+        }
+    }
+}
+
+@mixin transition($transition...) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transition-duration($duration...) {
+    -moz-transition-property: $duration;
+    -o-transition-property: $duration;
+    -webkit-transition-property: $duration;
+    transition-property: $duration;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// translate
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}

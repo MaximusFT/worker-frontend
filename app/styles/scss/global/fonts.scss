@@ -1,0 +1,20 @@
+@import '../../ico/fonts/ico';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,cyrillic);
+
+/*==================================================
+Icon webfont
+--------------------------------------------------
+    Dependencies:
+        - base mixins & variables
+==================================================*/
+@font-face {
+    font-family: "#{$ffIco}";
+    src: url('#{$ffIcoPath}#{$ffIco}.eot');
+    src: url('#{$ffIcoPath}#{$ffIco}.eot?#iefix') format('eot'),
+        url('#{$ffIcoPath}#{$ffIco}.woff2') format('woff2'),
+        url('#{$ffIcoPath}#{$ffIco}.woff') format('woff'),
+        url('#{$ffIcoPath}#{$ffIco}.ttf') format('truetype'),
+        url('#{$ffIcoPath}#{$ffIco}.svg#$ffIco') format('svg');
+}
+

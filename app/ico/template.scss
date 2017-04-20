@@ -1,0 +1,38 @@
+$ffIco: '<%= fontName %>';
+$ffIcoPath: '<%= fontPath %>';
+
+.ico {
+    display: inline-block;
+    font: normal normal normal 14px/1 "<%= fontName %>";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: -10%;
+}
+.ico-inverse {
+    color: #ffffff;
+}
+.ico-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -20%;
+}
+.ico-2x {
+    font-size: 2.5em;
+}
+.ico-3x {
+    font-size: 3em;
+}
+.ico-4x {
+    font-size: 4em;
+}
+.ico-5x {
+    font-size: 5em;
+}
+
+<% _.each(glyphs, function(glyph) { %>
+.<%= cssClass %>-<%= glyph.fileName.substring(6) %>:before {
+	content: "\<%= glyph.codePoint %>";
+}
+<% }); %>
